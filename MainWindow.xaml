@@ -1,0 +1,41 @@
+﻿<Window x:Class="messenger2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:messenger2"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Background="#C5D0E6"
+        Title="Авторизация" Height="450" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Жалкая пародия на стену Дурова" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+        <TextBox x:Name="vhod" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Введите имя пользователя" AcceptsReturn="True" IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" Style="{StaticResource MaterialDesignFilledTextBox}"
+TextWrapping="Wrap" Grid.Row="2" Grid.ColumnSpan="3"
+    />
+        <Button Content="Создать новый чат" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignRaisedDarkButton}" ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+                Grid.Row="3" Grid.ColumnSpan="3" Click="Vhod" />
+        <Button Content="Подключиться к чату" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignRaisedDarkButton}" ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+                Grid.Row="4" Grid.ColumnSpan="3"
+  />
+        <TextBox VerticalAlignment="Top" materialDesign:HintAssist.Hint="Введите IP адрес чата" AcceptsReturn="True" IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" Style="{StaticResource MaterialDesignFilledTextBox}"
+TextWrapping="Wrap" Grid.Row="6" Grid.ColumnSpan="3"
+    />
+    </Grid>
+</Window>

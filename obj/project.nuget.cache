@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "EYiqcmWfXezZbTpOMWpjA63rxWIJ4sHIK7SLN6bKIqnpLC0m+iEeijP2GD3UqnIcWV5Cdju/Cl2hYzGfTH4TcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nitz4\\source\\repos\\messenger2\\messenger2\\messenger2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nitz4\\.nuget\\packages\\controlzex\\4.3.0\\controlzex.4.3.0.nupkg.sha512",
+    "C:\\Users\\nitz4\\.nuget\\packages\\mahapps.metro\\2.0.0\\mahapps.metro.2.0.0.nupkg.sha512",
+    "C:\\Users\\nitz4\\.nuget\\packages\\materialdesigncolors\\3.0.0\\materialdesigncolors.3.0.0.nupkg.sha512",
+    "C:\\Users\\nitz4\\.nuget\\packages\\materialdesignthemes\\5.0.0\\materialdesignthemes.5.0.0.nupkg.sha512",
+    "C:\\Users\\nitz4\\.nuget\\packages\\materialdesignthemes.mahapps\\1.0.0\\materialdesignthemes.mahapps.1.0.0.nupkg.sha512",
+    "C:\\Users\\nitz4\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\nitz4\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\nitz4\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22000.31\\microsoft.windows.sdk.net.ref.10.0.22000.31.nupkg.sha512"
+  ],
+  "logs": []
+}
