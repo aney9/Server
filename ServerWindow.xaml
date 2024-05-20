@@ -29,16 +29,16 @@
         <Button Content="Посмотреть логи чата" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Style="{StaticResource MaterialDesignRaisedDarkButton}"
   ToolTip="Resource name: MaterialDesignRaisedLightDarkButton" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4"
   />
-        <ListBox x:Name="mess" Grid.ColumnSpan="4" Grid.Row="1" Grid.Column="1"/>
+        <ListBox x:Name="mess" Grid.ColumnSpan="4" Grid.Row="1" Grid.Column="1" SelectionChanged="mess_SelectionChanged"/>
         <Button Grid.Row="2" Grid.Column="1" Content="{materialDesign:PackIcon ExitRun}"
   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
   ToolTip="Icon"/>
         <Button Content="{materialDesign:PackIcon ArrowRightBoldOutline}"
   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
-  ToolTip="Icon" Grid.Row="3" Grid.Column="4"/>
+  ToolTip="Icon" Grid.Row="3" Grid.Column="4" Click="Otpravka"/>
 
         <TextBox VerticalAlignment="Center" materialDesign:HintAssist.Hint="Введите IP адрес чата" AcceptsReturn="True" IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" Style="{StaticResource MaterialDesignFilledTextBox}"
-TextWrapping="Wrap" Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="2" 
+TextWrapping="Wrap" Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="2" x:Name="message"
     />
     </Grid>
 </Window>

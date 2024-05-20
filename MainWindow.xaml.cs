@@ -20,7 +20,6 @@ namespace messenger2
         public MainWindow()
         {
             InitializeComponent();
-            TcpServer server = new TcpServer();
         }
 
         private void Vhod(object sender, RoutedEventArgs e)
@@ -35,6 +34,7 @@ namespace messenger2
                 ServerWindow serverWindow = new ServerWindow();
                 serverWindow.Show();
                 this.Close();
+                TcpServer server = new TcpServer();
             }
             else
             {

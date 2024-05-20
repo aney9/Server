@@ -10,9 +10,9 @@ namespace messenger2
 {
     internal class TcpServer
     {
-        private Socket socket;
-        private List<Socket> clients = new List<Socket>();
-        ServerWindow window = new ServerWindow();
+        public Socket socket;//hui
+        public List<Socket> clients = new List<Socket>();//Сафилисевна я не шарю схуяли он критует конкретно в этих 3-х строчках выдавая мне ошибку на рандом в них
+        ServerWindow window = new ServerWindow();//dsdsds
         public TcpServer()
         {
             IPEndPoint ipPoint = new IPEndPoint(IPAddress.Any, 8888);
@@ -45,7 +45,7 @@ namespace messenger2
                 }
             }
         }
-        private async Task SendMessage(Socket client, string message)
+        public async Task SendMessage(Socket client, string message)
         {
             byte[] bytes = Encoding.UTF8.GetBytes(message);
 

@@ -32,3 +32,4 @@ C:\Users\nitz4\source\repos\messenger2\messenger2\obj\Debug\net8.0-windows10.0.2
 C:\Users\nitz4\source\repos\messenger2\messenger2\bin\Debug\net8.0-windows10.0.22000.0\ControlzEx.dll
 C:\Users\nitz4\source\repos\messenger2\messenger2\bin\Debug\net8.0-windows10.0.22000.0\MahApps.Metro.dll
 C:\Users\nitz4\source\repos\messenger2\messenger2\bin\Debug\net8.0-windows10.0.22000.0\MaterialDesignThemes.MahApps.dll
+C:\Users\nitz4\source\repos\messenger2\messenger2\obj\Debug\net8.0-windows10.0.22000.0\messenger2.sourcelink.json
