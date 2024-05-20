@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace messenger2
 {
-    internal class TcpServer
+    public class TcpServer
     {
         public Socket socket;//hui
         public List<Socket> clients = new List<Socket>();//Сафилисевна я не шарю схуяли он критует конкретно в этих 3-х строчках выдавая мне ошибку на рандом в них
@@ -21,7 +21,7 @@ namespace messenger2
             socket.Listen(1000);
             ListenToClients();
         }
-        private async Task ListenToClients()
+        public async Task ListenToClients()
         {
             while (true)
             {
@@ -31,7 +31,7 @@ namespace messenger2
 
             }
         }
-        private async Task RecieveMessage(Socket client)
+        public async Task RecieveMessage(Socket client)
         {
             while (true)
             {

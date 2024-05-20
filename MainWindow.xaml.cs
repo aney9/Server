@@ -34,7 +34,6 @@ namespace messenger2
                 ServerWindow serverWindow = new ServerWindow();
                 serverWindow.Show();
                 this.Close();
-                TcpServer server = new TcpServer();
             }
             else
             {

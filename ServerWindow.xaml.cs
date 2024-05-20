@@ -12,6 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Windows.Media.Protection.PlayReady;
+using Windows.UI;
 
 namespace messenger2
 {
@@ -20,13 +22,13 @@ namespace messenger2
     /// </summary>
     public partial class ServerWindow : Window
     {
-        TcpServer server = new();//бля он критует каждый раз в новом месте с одной и той же ошибкой
+        TcpServer server = new TcpServer();
         Socket socket;
         private CancellationTokenSource isWorking;
         public ServerWindow()
         {
             InitializeComponent();
-            
+            Task.Run(() => server.RecieveMessage(socket));
         }
 
         private void mess_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -41,7 +43,6 @@ namespace messenger2
                 MainWindow main = new MainWindow();
                 main.Show();
                 this.Close();
-                isWorking.Cancel();
             }
             else
             {
@@ -49,6 +50,11 @@ namespace messenger2
                 server.SendMessage(socket,message.Text);
                 message.Text = null;
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

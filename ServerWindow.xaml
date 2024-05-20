@@ -30,9 +30,9 @@
   ToolTip="Resource name: MaterialDesignRaisedLightDarkButton" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4"
   />
         <ListBox x:Name="mess" Grid.ColumnSpan="4" Grid.Row="1" Grid.Column="1" SelectionChanged="mess_SelectionChanged"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="{materialDesign:PackIcon ExitRun}"
+        <Button Grid.Row="2" Content="{materialDesign:PackIcon ExitRun}"
   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
-  ToolTip="Icon"/>
+  ToolTip="Icon" Grid.ColumnSpan="3" HorizontalAlignment="Right" Margin="0,11,210,11" Width="106" Click="Button_Click"/>
         <Button Content="{materialDesign:PackIcon ArrowRightBoldOutline}"
   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
   ToolTip="Icon" Grid.Row="3" Grid.Column="4" Click="Otpravka"/>
